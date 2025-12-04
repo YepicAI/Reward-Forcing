@@ -1,7 +1,38 @@
 <div align="center">
 
+<div align="center">
+  
+<h1>Reward Forcing: <br> Efficient Streaming Video Generation with <br> Rewarded Distribution Matching Distillation</h1>
 
-# Reward Forcing: <br> Efficient Streaming Video Generation with <br> Rewarded Distribution Matching Distillation
+<!-- 作者列表 -->
+<div>
+  <a href="#" target="_blank">Yunhong Lu</a><sup>1,2</sup>,
+  <a href="https://zengyh1900.github.io/" target="_blank">Yanhong Zeng</a><sup>2</sup>,
+  <a href="#" target="_blank">Haobo Li</a><sup>2,4</sup>,
+  <a href="https://ken-ouyang.github.io/" target="_blank">Hao Ouyang</a><sup>2</sup>,
+  <a href="https://github.com/qiuyu96" target="_blank">Qiuyu Wang</a><sup>2</sup>,
+  <a href="https://felixcheng97.github.io/" target="_blank">Ka Leong Cheng</a><sup>2</sup>,
+  <br>
+  <a href="#" target="_blank">Jiapeng Zhu</a><sup>2</sup>,
+  <a href="#" target="_blank">Hengyuan Cao</a><sup>1</sup>,
+  <a href="https://zhipengzhang.cn/" target="_blank">Zhipeng Zhang</a><sup>5</sup>,
+  <a href="https://openreview.net/profile?id=%7EXing_Zhu2" target="_blank">Xing Zhu</a><sup>2</sup>,
+  <a href="https://shenyujun.github.io/" target="_blank">Yujun Shen</a><sup>2</sup>,
+  <a href="#" target="_blank">Min Zhang</a><sup>1,3</sup>
+</div>
+
+<br>
+
+<!-- 机构列表 (你需要根据实际情况修改这里) -->
+<div>
+  <sup>1</sup>Harbin Institute of Technology, 
+  <sup>2</sup>Ant Group, 
+  <sup>3</sup>Peng Cheng Laboratory, <br>
+  <sup>4</sup>The Hong Kong Polytechnic University, 
+  <sup>5</sup>Author's Affiliation
+</div>
+
+</div>
 
 [![Paper](https://img.shields.io/badge/Paper-arXiv-red)](your-arxiv-link)
 [![Project Page](https://img.shields.io/badge/Project-Page-green)](https://reward-forcing.github.io/)
@@ -9,11 +40,13 @@
 
 </div>
 
-## 📢 News
+## 🚀 Progress
 
-- **[2025-12-05]** 🎉 Code and pretrained models released!
-- **[2025-12-05]** 🌐 Project page is online!
-- **[2025-12-05]** 📝 Our paper is online!
+- [x] 📝 Technical Report / Paper
+- [x] 🌐 Project Homepage
+- [x] 💻 Training & Inference Code
+- [x] 🤗 Pretrained Model: T2V-1.3B
+- [ ] 🔜 Pretrained Model: T2V-14B (In progress)
 
 
 ## 🎯 Overview
@@ -80,6 +113,7 @@ pip install -e .
 | Wan2.1-T2V-1.3B |  [Hugging Face](https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B) |
 | Wan2.1-T2V-14B |  [Hugging Face](https://huggingface.co/Wan-AI/Wan2.1-T2V-14B) |
 | ODE Initialization | [Hugging Face](https://huggingface.co/gdhe17/Self-Forcing/blob/main/checkpoints/ode_init.pt) |
+| Reward Forcing | [Hugging Face](https://huggingface.co/JaydenLu666/Reward-Forcing-T2V-1.3B) |
 
 ### File Structure
 After downloading, organize the checkpoints as follows:
@@ -90,7 +124,7 @@ checkpoints/
 │   └── model_config.json
 ├── Wan2.1-T2V-1.3B/
 ├── Wan2.1-T2V-14B/
-├── Reward-Forcing/
+├── Reward-Forcing-T2V-1.3B/
 └── ode_init.pt
 ```
 
@@ -110,7 +144,7 @@ bash download_checkpoints.sh
 python inference.py \
     --num_output_frames 21 \
     --config_path configs/reward_forcing.yaml \
-    --checkpoint_path checkpoints/Reward-Forcing/rewardforcing.pt \
+    --checkpoint_path checkpoints/Reward-Forcing-T2V-1.3B/rewardforcing.pt \
     --output_folder videos/rewardforcing-5s \
     --data_path prompts/MovieGenVideoBench_extended.txt \
     --use_ema
@@ -119,7 +153,7 @@ python inference.py \
 python inference.py \
     --num_output_frames 120 \
     --config_path configs/reward_forcing.yaml \
-    --checkpoint_path checkpoints/Reward-Forcing/rewardforcing.pt \
+    --checkpoint_path checkpoints/Reward-Forcing-T2V-1.3B/rewardforcing.pt \
     --output_folder videos/rewardforcing-30s \
     --data_path prompts/MovieGenVideoBench_extended.txt \
     --use_ema
@@ -192,9 +226,8 @@ This project is built upon several excellent works: [CausVid](https://github.com
 We thank the authors for their great work and open-source contribution.
 
 
-
 ## 📧 Contact
 For questions and discussions, please:
-- Open an issue on [GitHub Issues](link)
+- Open an issue on [GitHub Issues](https://github.com/JaydenLyh/Reward-Forcing/issues)
 - Contact us at: yunhonglu@zju.edu.cn
 

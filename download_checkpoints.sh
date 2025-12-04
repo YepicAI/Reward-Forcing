@@ -16,6 +16,9 @@ huggingface-cli download KlingTeam/VideoReward --local-dir checkpoints/Videorewa
 echo "Downloading ODE Initialization..."
 huggingface-cli download gdhe17/Self-Forcing checkpoints/ode_init.pt --local-dir .
 
+echo "Downloading Reward Forcing..."
+huggingface-cli download JaydenLu666/Reward-Forcing-T2V-1.3B --local-dir checkpoints/Reward-Forcing-T2V-1.3B
+
 echo "======================================================"
 echo "Finished downloading models!"
 ls -R checkpoints
