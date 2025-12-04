@@ -4,7 +4,7 @@
 # Reward Forcing: <br> Efficient Streaming Video Generation with <br> Rewarded Distribution Matching Distillation
 
 [![Paper](https://img.shields.io/badge/Paper-arXiv-red)](your-arxiv-link)
-[![Project Page](https://img.shields.io/badge/Project-Page-green)](https://github.com/JaydenLyh/Reward-Forcing)
+[![Project Page](https://img.shields.io/badge/Project-Page-green)](https://reward-forcing.github.io/)
 [![Models](https://img.shields.io/badge/🤗-Models-yellow)](https://huggingface.co/JaydenLu666/Reward-Forcing-T2V-1.3B)
 
 </div>
@@ -167,7 +167,7 @@ Training configurations are in `configs/`:
 
 
 ### Qualitative Results
-Visualizations can be found in our [Project Page](your-project-page).
+Visualizations can be found in our [Project Page](https://reward-forcing.github.io/).
 
 
 
