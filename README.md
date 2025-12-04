@@ -221,7 +221,7 @@ If you find this work useful, please consider citing:
 
 
 ## 🙏 Acknowledgements
-This project is built upon several excellent works: [CausVid](https://github.com/tianweiy/CausVid), [Self Forcing](https://github.com/guandeh17/Self-Forcing), [Infinite Forcing](https://github.com/SOTAMak1r/Infinite-Forcing), [Wan2.1](https://github.com/Wan-Video/Wan2.1)
+This project is built upon several excellent works: [CausVid](https://github.com/tianweiy/CausVid), [Self Forcing](https://github.com/guandeh17/Self-Forcing), [Infinite Forcing](https://github.com/SOTAMak1r/Infinite-Forcing), [Wan2.1](https://github.com/Wan-Video/Wan2.1), [VideoAlign](https://github.com/KlingTeam/VideoAlign)
 
 We thank the authors for their great work and open-source contribution.
 
