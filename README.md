@@ -210,12 +210,14 @@ Visualizations can be found in our [Project Page](https://reward-forcing.github.
 If you find this work useful, please consider citing:
 
 ```bibtex
-@inproceedings{yourname2024yourpaper,
-  title={Your Paper Title},
-  author={Your Name and Collaborator Names},
-  booktitle={Conference/Journal Name},
-  year={2024},
-  pages={xxx--xxx}
+@misc{lu2025rewardforcingefficientstreaming,
+      title={Reward Forcing: Efficient Streaming Video Generation with Rewarded Distribution Matching Distillation}, 
+      author={Yunhong Lu and Yanhong Zeng and Haobo Li and Hao Ouyang and Qiuyu Wang and Ka Leong Cheng and Jiapeng Zhu and Hengyuan Cao and Zhipeng Zhang and Xing Zhu and Yujun Shen and Min Zhang},
+      year={2025},
+      eprint={2512.04678},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2512.04678}, 
 }
 ```
 
